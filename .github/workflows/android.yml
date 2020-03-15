@@ -24,8 +24,7 @@ jobs:
       - name: Build
         env:
           KEYSTORE_PASS: ${{ secrets.KEYSTORE_PASS }}
-          ALIAS_NAME: ${{ secrets.ALIAS_NAME }}
-          ALIAS_PASS: ${{ secrets.ALIAS_PASS }}
+          MY_TOKEN: ${{ secrets.MY_TOKEN }}
         run: |
           chmod +x gradlew
           ./gradlew assembleRelease
