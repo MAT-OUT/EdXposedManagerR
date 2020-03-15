@@ -1,4 +1,4 @@
-name: EdXposed R
+name: EdXposedManagerR
 
 on: 
  push:
@@ -31,6 +31,6 @@ jobs:
           ./gradlew assembleRelease
       - uses: actions/upload-artifact@master
         name: Upload artifact
-        with: 
-          name: EdXposed R
+        with:
+          name: EdXposedManagerR
           path: app/build/outputs/
