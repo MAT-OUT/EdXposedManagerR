@@ -31,6 +31,6 @@ jobs:
           ./gradlew assembleRelease
       - uses: actions/upload-artifact@master
         name: Upload artifact
-        with:
+        with: 
           name: EdXposedManagerR
           path: app/build/outputs/
