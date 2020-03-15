@@ -11,6 +11,6 @@
     <color name="amber_500">#FFC107</color>
     <color name="navigationBarColor">?colorPrimary</color>
     <color name="colorStickyHeader">#eafafafa</color>
-    <color name="ic_launcher_background">#35C0CA</color>
+    <color name="ic_launcher_background">#2196F3</color>
     <color name="navigationBarColorBlack">@android:color/black</color>
 </resources>
