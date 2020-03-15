@@ -1,4 +1,4 @@
-name: EdXposedManagerR
+name: EdXposed R
 
 on: 
  push:
@@ -32,5 +32,5 @@ jobs:
       - uses: actions/upload-artifact@master
         name: Upload artifact
         with: 
-          name: EdXposedManagerR
+          name: EdXposed R
           path: app/build/outputs/
