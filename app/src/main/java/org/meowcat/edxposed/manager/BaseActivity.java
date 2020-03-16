@@ -162,6 +162,9 @@ public class BaseActivity extends AppCompatActivity {
         if (XposedApp.getPreferences().getBoolean("md2", false) && !(this instanceof MainActivity)) {
             theme.applyStyle(R.style.ThemeOverlay_Md2, true);
         }
+        if (this instanceof MainActivity) {
+            theme.applyStyle(R.style.ThemeOverlay_ActivityMain, true);
+        }
         theme.applyStyle(getThemeStyleRes(this), true);
         // only pass theme style to super, so styled theme will not be overwritten
         super.onApplyThemeResource(theme, R.style.ThemeOverlay, first);
@@ -285,16 +288,16 @@ public class BaseActivity extends AppCompatActivity {
                 areYouSure(R.string.soft_reboot, (dialog, which) -> softReboot());
                 break;
             case R.id.reboot_recovery:
-                reboot("recovery");
+                areYouSure(R.string.reboot_recovery, (dialog, which) -> reboot("recovery"));
                 break;
             case R.id.reboot_bootloader:
-                reboot("bootloader");
+                areYouSure(R.string.reboot_bootloader, (dialog, which) -> reboot("bootloader"));
                 break;
             case R.id.reboot_download:
-                reboot("download");
+                areYouSure(R.string.reboot_download, (dialog, which) -> reboot("download"));
                 break;
             case R.id.reboot_edl:
-                reboot("edl");
+                areYouSure(R.string.reboot_edl, (dialog, which) -> reboot("edl"));
                 break;
         }
 

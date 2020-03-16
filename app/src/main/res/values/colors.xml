@@ -7,7 +7,7 @@
     <color name="colorActionBar">#F0F0F0</color>
     <color name="red_500">#F44336</color>
     <color name="warning">@color/red_500</color>
-    <color name="download_status_update_available">#4CAF50</color>
+    <color name="download_status_update_available">#2196F3</color>
     <color name="amber_500">#FFC107</color>
     <color name="navigationBarColor">?colorPrimary</color>
     <color name="colorStickyHeader">#eafafafa</color>
